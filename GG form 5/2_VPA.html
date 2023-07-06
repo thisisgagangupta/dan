@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visual Processing Assessment</title>
+  <link rel="stylesheet" href="test-form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: burlywood;">
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progressBar"></div>
+  </div>
+  <p class="progress-bar-text" id="progressText"></p>
+
+  <div class="container">
+    <div class="form-wrapper">
+      <h1 class="form-title">Visual Processing Assessment</h1>
+      
+      <form id="testForm">
+        <!-- Question 1 -->
+        <div class="question SN">
+          <p>1. He prefers to play or work in low light.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question5-1" data-type="SN" name="question5" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-2" data-type="SN" name="question5" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-3" data-type="SN" name="question5" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-4" data-type="SN" name="question5" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-5" data-type="SN" name="question5" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="question NQ">
+          <p>2. Prefer brightly colored or patterned clothing.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question8-1" data-type="NQ" name="question8" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-2" data-type="NQ" name="question8" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-3" data-type="NQ" name="question8" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-4" data-type="NQ" name="question8" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-5" data-type="NQ" name="question8" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="question NQ">
+          <p>3. Enjoy observing the details of the objects.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question8-1a" data-type="NQ" name="question8a" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-2a" data-type="NQ" name="question8a" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-3a" data-type="NQ" name="question8a" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-4a" data-type="NQ" name="question8a" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-5a" data-type="NQ" name="question8a" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="question RG">
+          <p>4. You need help finding objects that are evident to other people.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question6-1" data-type="RG" name="question6" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-2" data-type="RG" name="question6" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-3" data-type="RG" name="question6" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-4" data-type="RG" name="question6" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-5" data-type="RG" name="question6" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="question SN">
+          <p>5. Bright lights bother him more than other children his age.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question5-1a" data-type="SN" name="question5a" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-2a" data-type="SN" name="question5a" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-3a" data-type="SN" name="question5a" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-4a" data-type="SN" name="question5a" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-5a" data-type="SN" name="question5a" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 6 -->
+        <div class="question SK">
+          <p>6. Look at the people who move around the room.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question7-1" data-type="SK" name="question7" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-2" data-type="SK" name="question7" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-3" data-type="SK" name="question7" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-4" data-type="SK" name="question7" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-5" data-type="SK" name="question7" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 7 -->
+        <!-- <div class="question AV">
+          <p>Question 7: You are bothered by bright lights ( p., Axis., Hides from the light coming in through the car window ).</p>
+          <div class="form-group"> -->
+            <!-- Replace these radio buttons with your desired options -->
+            <!-- <input type="radio" id="visualResponse31" data-type="AV" name="visualResponse7" value="1">
+            <label for="visualResponse31">1</label>
+            <input type="radio" id="visualResponse32" data-type="AV" name="visualResponse7" value="2">
+            <label for="visualResponse32">2</label>
+            <input type="radio" id="visualResponse33" data-type="AV" name="visualResponse7" value="3">
+            <label for="visualResponse33">3</label>
+            <input type="radio" id="visualResponse34" data-type="AV" name="visualResponse7" value="4">
+            <label for="visualResponse34">4</label>
+            <input type="radio" id="visualResponse35" data-type="AV" name="visualResponse7" value="5">
+            <label for="visualResponse35">5</label>
+          </div>
+        </div> -->
+        
+        <button type="button" class="btn btn-primary btn-next" onclick="nextPage()">Next</button>
+        <!-- <input type="submit"  id="submit-data" value="get data"/> -->
+      </form>
+    </div>
+  </div>
+  <script>
+    // Set the total number of pages in the quiz
+    const totalPages = 9;
+
+    // Calculate the current page number (example: 4th page)
+    const currentPage = 2;
+
+    // Calculate the progress percentage
+    const progressPercentage = Math.floor((currentPage / totalPages) * 100);
+
+    // Update the progress bar width and text
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+
+    progressBar.style.width = `${progressPercentage}%`;
+    progressText.textContent = `${progressPercentage}% Complete`;
+
+
+
+
+    function nextPage() {
+    // Retrieve the selected values from the form
+    const form = document.getElementById("testForm");
+    const formData = new FormData(form);
+
+    // Create a URLSearchParams object to store the selected values
+    const urlParams = new URLSearchParams();
+
+    // Iterate over the form data and append the selected values to the URLSearchParams object
+    for (const pair of formData.entries()) {
+      urlParams.append(pair[0], pair[1]);
+    }
+
+    // Redirect to the results page with the selected values as query parameters
+    window.location.href = `3_TPA.html?${urlParams.toString()}`;
+    }
+
+
+  </script>
+
+<script>
+    
+  const score = JSON.parse(
+  window.localStorage.getItem('med_score')
+  );
+  let { AV_score, SN_score, RG_score, SK_score, NQ_score } = score;
+  document
+      .getElementById("submit-data")
+      .addEventListener("click", (e)=>{
+      e.preventDefault();
+      console.log('hii');
+      
+      
+          // const AVDivs = document.querySelectorAll(".AV");
+          // const AVInputs = document.querySelectorAll("input");
+          // let AV_Total = 0;
+          // for(let i=0; i<AVDivs; i++){
+          //     for(let j=0; j<AVInputs.length; j++){
+          //     // AV_Total += AVDivs[i].value
+          //     console.log(AVDivs[i].value);
+          //     }
+          // }
+          // // AV_Total.map(AV => AV_Total+=AV.value);
+          // console.log(AVInputs);
+          // console.log(AV_Total);
+
+          const AV = document.querySelectorAll('input[type="radio"][data-type="AV"]:checked');
+          const SN = document.querySelectorAll('input[type="radio"][data-type="SN"]:checked');
+          const RG = document.querySelectorAll('input[type="radio"][data-type="RG"]:checked');
+          const SK = document.querySelectorAll('input[type="radio"][data-type="SK"]:checked');
+          const NQ = document.querySelectorAll('input[type="radio"][data-type="NQ"]:checked');
+
+
+          // console.log(AV);
+          // console.log(SN);
+          // console.log(RG);
+          // console.log(SK);
+          // console.log(NQ);
+
+          let AV_Total = AV_score,
+              SN_Total = SN_score,
+              RG_Total = RG_score;
+              SK_Total = SK_score;
+              NQ_Total = NQ_score;
+
+
+          for(let i=0; i<AV.length; i++){
+              // console.log(typeof AV[i].value);
+              AV_Total += Number(AV[i].value);
+          }
+          for(let i=0; i<SN.length; i++){
+              // console.log(typeof SN[i].value);
+              SN_Total += Number(SN[i].value);
+          }
+          for(let i=0; i<RG.length; i++){
+              // console.log(typeof RG[i].value);
+              RG_Total += Number(RG[i].value);
+          }
+          for(let i = 0; i<SK.length; i++) {
+              //console.log(typeof SK[i].value);
+              SK_Total += Number(SK[i].value);
+          }
+          for(let i = 0; i<NQ.length; i++) {
+              //console.log(typeof NQ[i].value);
+              NQ_Total += Number(NQ[i].value);
+          }
+
+          console.log(AV_Total);
+          console.log(SN_Total);
+          console.log(RG_Total);
+          console.log(SK_Total);
+          console.log(NQ_Total);
+
+          window.localStorage.setItem('med_score', JSON.stringify({
+              AV_score: AV_Total,
+              SN_score: SN_Total,
+              RG_score: RG_Total,
+              SK_score: SK_Total,
+              NQ_score: NQ_Total,
+          }));
+  })
+
+</script>
+</body>
+</html>

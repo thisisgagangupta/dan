@@ -1,0 +1,225 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-instructions {
+  margin-bottom: 30px;
+  color: #888888;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.calendar-icon {
+  cursor: pointer;
+}
+
+.btn-start-test {
+  margin-top: 20px;
+}
+
+/* Additional Styles for Enhanced UI */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Additional Styles for Enhanced UI */
+.radio-label {
+  padding-left: 30px;
+}
+
+.radio-label::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  margin-right: 5px;
+}
+
+.radio-label::after {
+  content: attr(for);
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+.radios input[type="radio"]:checked + .radio-label::before {
+  background-color: #007bff;
+}
+
+
+/* Additional Styles for Enhanced UI */
+.questionnaire-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.questionnaire-wrapper p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.questionnaire-wrapper .checkbox-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.questionnaire-wrapper .checkbox-label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.questionnaire-wrapper .checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+.questionnaire-wrapper .checkboxes input[type="checkbox"]:checked + .checkbox-label::before {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-submit {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-bar-text {
+  text-align: center;
+}
+
+#front {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+#front1 {
+  z-index: 1;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Style the checkbox border */
+.custom-checkbox .checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Style the text inside the custom checkbox */
+.custom-checkbox .checkbox-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+/* Style the checkmark */
+.custom-checkbox .checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Style the checkmark when checked */
+.custom-checkbox input:checked + .checkbox-label::after {
+  opacity: 1;
+}
+

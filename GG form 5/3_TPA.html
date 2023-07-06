@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tactile Processing Assessment</title>
+  <link rel="stylesheet" href="test-form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: burlywood;">
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progressBar"></div>
+  </div>
+  <p class="progress-bar-text" id="progressText"></p>
+
+  <div class="container">
+    <div class="form-wrapper">
+      <h1 class="form-title">Touch Processing Assessment</h1>
+      
+      <form id="testForm">
+        <!-- Question 1 -->
+        <div class="question" id="SN">
+          <p>1. He is distressed when they fix it (e.g., fights or cries when they cut his hair, wash his face, cut his nails).</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question5-1" data-type="SN" name="question5" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-2" data-type="SN" name="question5" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-3" data-type="SN" name="question5" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-4" data-type="SN" name="question5" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-5" data-type="SN" name="question5" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="question" id="NQ">
+          <p>2. You are irritated by having to wear shoes or socks.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question8-1" data-type="NQ" name="question8" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-2" data-type="NQ" name="question8" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-3" data-type="NQ" name="question8" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-4" data-type="NQ" name="question8" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question8-5" data-type="NQ" name="question8" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="question" id="AV">
+          <p>3. He reacts impulsively or aggressively when someone touches him.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question6-1" data-type="AV" name="question6" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-2" data-type="AV" name="question6" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-3" data-type="AV" name="question6" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-4" data-type="AV" name="question6" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-5" data-type="AV" name="question6" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="question" id="SN">
+          <p>4. You get nervous when standing or close to other people (e.g., queuing).</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question5-1a" data-type="SN" name="question5a" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-2a" data-type="SN" name="question5a" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-3a" data-type="SN" name="question5a" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-4a" data-type="SN" name="question5a" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-5a" data-type="SN" name="question5a" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="question" id="SN">
+          <p>5. You rub or scratch the part of your body that someone has touched.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question5-1b" data-type="SN" name="question5b" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-2b" data-type="SN" name="question5b" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-3b" data-type="SN" name="question5b" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-4b" data-type="SN" name="question5b" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question5-5b" data-type="SN" name="question5b" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 6 -->
+        <div class="question" id="SK">
+          <p>6. It touches both people or things that come to annoy others.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question7-1" data-type="SK" name="question7" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-2" data-type="SK" name="question7" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-3" data-type="SK" name="question7" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-4" data-type="SK" name="question7" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-5" data-type="SK" name="question7" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 7 -->
+        <div class="question" id="SK">
+          <p>7. Shows the need to touch toys, surfaces, or textures (e.g., wants to touch everything).</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question7-1a" data-type="SK" name="question7a" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-2a" data-type="SK" name="question7a" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-3a" data-type="SK" name="question7a" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-4a" data-type="SK" name="question7a" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-5a" data-type="SK" name="question7a" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 8 -->
+        <div class="question" id="RG">
+          <p>8. He doesn't seem to notice pain.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question6-1a" data-type="RG" name="question6a" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-2a" data-type="RG" name="question6a" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-3a" data-type="RG" name="question6a" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-4a" data-type="RG" name="question6a" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-5a" data-type="RG" name="question6a" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 9 -->
+        <div class="question" id="RG">
+          <p>9. He doesn't seem to notice temperature changes.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question6-1b" data-type="RG" name="question6b" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-2b" data-type="RG" name="question6b" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-3b" data-type="RG" name="question6b" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-4b" data-type="RG" name="question6b" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-5b" data-type="RG" name="question6b" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 10 -->
+        <div class="question" id="SK">
+          <p>10. He touches people or things more than other children his age.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question7-1b" data-type="SK" name="question7b" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-2b" data-type="SK" name="question7b" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-3b" data-type="SK" name="question7b" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-4b" data-type="SK" name="question7b" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question7-5b" data-type="SK" name="question7b" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <!-- Question 11 -->
+        <div class="question" id="RG">
+          <p>11. He doesn't seem to realize he has dirty hands or faces.</p>
+          <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<label>
+              <input type="radio" id="question6-1c" data-type="RG" name="question6c" value="1">1
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-2c" data-type="RG" name="question6c" value="2">2
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-3c" data-type="RG" name="question6c" value="3">3
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-4c" data-type="RG" name="question6c" value="4">4
+            </label> &nbsp;
+            <label>
+              <input type="radio" id="question6-5c" data-type="RG" name="question6c" value="5">5
+            </label> &nbsp;
+          </div>
+        </div>
+        
+        <button type="button" class="btn btn-primary btn-next" onclick="nextPage()">Next</button>
+        <!-- <input type="submit"  id="submit-data" value="get data"/> -->
+      </form>
+    </div>
+  </div>
+  
+  <script>
+    // Set the total number of pages in the quiz
+    const totalPages = 9;
+
+    // Calculate the current page number (example: 4th page)
+    const currentPage = 3;
+
+    // Calculate the progress percentage
+    const progressPercentage = Math.floor((currentPage / totalPages) * 100);
+
+    // Update the progress bar width and text
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+
+    progressBar.style.width = `${progressPercentage}%`;
+    progressText.textContent = `${progressPercentage}% Complete`;
+
+    function nextPage() {
+    // Retrieve the selected values from the form
+    const form = document.getElementById("testForm");
+    const formData = new FormData(form);
+
+    // Create a URLSearchParams object to store the selected values
+    const urlParams = new URLSearchParams();
+
+    // Iterate over the form data and append the selected values to the URLSearchParams object
+    for (const pair of formData.entries()) {
+      urlParams.append(pair[0], pair[1]);
+    }
+
+    // Redirect to the results page with the selected values as query parameters
+    window.location.href = `4_EPM.html?${urlParams.toString()}`;
+    }
+
+
+  </script>
+
+<script>
+    
+  const score = JSON.parse(
+  window.localStorage.getItem('med_score')
+  );
+  let { AV_score, SN_score, RG_score, SK_score, NQ_score } = score;
+  document
+      .getElementById("submit-data")
+      .addEventListener("click", (e)=>{
+      e.preventDefault();
+      console.log('hii');
+      
+      
+          // const AVDivs = document.querySelectorAll(".AV");
+          // const AVInputs = document.querySelectorAll("input");
+          // let AV_Total = 0;
+          // for(let i=0; i<AVDivs; i++){
+          //     for(let j=0; j<AVInputs.length; j++){
+          //     // AV_Total += AVDivs[i].value
+          //     console.log(AVDivs[i].value);
+          //     }
+          // }
+          // // AV_Total.map(AV => AV_Total+=AV.value);
+          // console.log(AVInputs);
+          // console.log(AV_Total);
+
+          const AV = document.querySelectorAll('input[type="radio"][data-type="AV"]:checked');
+          const SN = document.querySelectorAll('input[type="radio"][data-type="SN"]:checked');
+          const RG = document.querySelectorAll('input[type="radio"][data-type="RG"]:checked');
+          const SK = document.querySelectorAll('input[type="radio"][data-type="SK"]:checked');
+          const NQ = document.querySelectorAll('input[type="radio"][data-type="NQ"]:checked');
+
+
+          // console.log(AV);
+          // console.log(SN);
+          // console.log(RG);
+          // console.log(SK);
+          // console.log(NQ);
+
+          let AV_Total = AV_score,
+              SN_Total = SN_score,
+              RG_Total = RG_score;
+              SK_Total = SK_score;
+              NQ_Total = NQ_score;
+
+
+          for(let i=0; i<AV.length; i++){
+              // console.log(typeof AV[i].value);
+              AV_Total += Number(AV[i].value);
+          }
+          for(let i=0; i<SN.length; i++){
+              // console.log(typeof SN[i].value);
+              SN_Total += Number(SN[i].value);
+          }
+          for(let i=0; i<RG.length; i++){
+              // console.log(typeof RG[i].value);
+              RG_Total += Number(RG[i].value);
+          }
+          for(let i = 0; i<SK.length; i++) {
+              //console.log(typeof SK[i].value);
+              SK_Total += Number(SK[i].value);
+          }
+          for(let i = 0; i<NQ.length; i++) {
+              //console.log(typeof NQ[i].value);
+              NQ_Total += Number(NQ[i].value);
+          }
+
+          console.log(AV_Total);
+          console.log(SN_Total);
+          console.log(RG_Total);
+          console.log(SK_Total);
+          console.log(NQ_Total);
+
+          window.localStorage.setItem('med_score', JSON.stringify({
+              AV_score: AV_Total,
+              SN_score: SN_Total,
+              RG_score: RG_Total,
+              SK_score: SK_Total,
+              NQ_score: NQ_Total,
+          }));
+  })
+
+</script>
+</body>
+</html>

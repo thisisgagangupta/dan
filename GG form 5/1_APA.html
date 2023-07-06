@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Test Form</title>
+  <link rel="stylesheet" href="test-form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="test-form.js"></script>
+</head>
+<body style="background-color: burlywood;">
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progressBar"></div>
+  </div>
+  <p class="progress-bar-text" id="progressText"></p>
+
+  <div class="container">
+    <div class="form-wrapper">
+      <h1 class="form-title">Auditory Processing Assessment</h1>
+      
+      <form id="testForm">
+        <!-- Question 1 -->
+        <div class="question AV">
+
+            <p>1. Reacts intensely to loud or unexpected sounds (siren, dog bark, hair dryer, vacuum cleaner, juicer).</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question6-a" data-type="AV" name="question6" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-b" data-type="AV" name="question6" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-c" data-type="AV" name="question6" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-d" data-type="AV" name="question6" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-e" data-type="AV" name="question6" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="question AV">
+            
+            <p>2. Cover your ears with your hands to protect yourself from sounds.</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question6-f" data-type="AV" name="question7" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-g" data-type="AV" name="question7" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-h" data-type="AV" name="question7" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-i" data-type="AV" name="question7" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-j" data-type="AV" name="question7" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="question SN">
+            
+            <p>3. You have a hard time finishing your homework when the music or television is on.</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question5-1" data-type="SN" name="question5" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-2" data-type="SN" name="question5" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-3" data-type="SN" name="question5" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-4" data-type="SN" name="question5" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-5" data-type="SN" name="question5" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="question SN">
+            
+            <p>4. It is distracted when there is a lot of noise around it.</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question5-a" data-type="SN" name="question4" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-b" data-type="SN" name="question4" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-c" data-type="SN" name="question4" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-d" data-type="SN" name="question4" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-e" data-type="SN" name="question4" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="question AV">
+            
+            <p>5. Low when there is ambient noise (fan, refrigerator, electric stove, etc.).</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question6-1" data-type="AV" name="question1" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-2" data-type="AV" name="question1" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-3" data-type="AV" name="question1" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-4" data-type="AV" name="question1" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-5" data-type="AV" name="question1" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Question 6 -->
+        <div class="question SN">
+            
+            <p>6. He ignores me or seems to ignore me.</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question5-1g" data-type="SN" name="question5a" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-h" data-type="SN" name="question5a" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-i" data-type="SN" name="question5a" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-j" data-type="SN" name="question5a" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-k" data-type="SN" name="question5a" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Question 7 -->
+        <div class="question SN">
+            
+            <p>7. He doesn't seem to hear when I call him by name (although he hears well).</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question5-1a" data-type="SN" name="question5b" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-2b" data-type="SN" name="question5b" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-3c" data-type="SN" name="question5b" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-4d" data-type="SN" name="question5b" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question5-5e" data-type="SN" name="question5b" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Question 8 -->
+        <div class="question RG">
+            
+            <p>8. Enjoy with strange noises or make noises for fun.</p>
+            <div class="form-group">
+              &nbsp;&nbsp;&nbsp;<label>
+                <input type="radio" id="question6-13" data-type="RG" name="question6a" value="1">1
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-25" data-type="RG" name="question6a" value="2">2
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-33" data-type="RG" name="question6a" value="3">3
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-41" data-type="RG" name="question6a" value="4">4
+              </label> &nbsp;
+              <label>
+                <input type="radio" id="question6-52" data-type="RG" name="question6a" value="5">5
+              </label> &nbsp;
+            </div>
+        </div>
+        
+        <!-- Next Button -->
+        <!-- <a href="2_VPA.html">Next page</a> -->
+        <button type="button" class="btn btn-primary btn-next" onclick="nextPage()">Next</button>
+        <!-- <input type='submit'  id="submit-data" value='get data'/> -->
+    </form>
+    </div>
+  </div>
+  
+  <script>
+
+    // Set the total number of pages in the quiz
+    const totalPages = 9;
+
+    // Calculate the current page number (example: 4th page)
+    const currentPage = 1;
+
+    // Calculate the progress percentage
+    const progressPercentage = Math.floor((currentPage / totalPages) * 100);
+
+    // Update the progress bar width and text
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+
+    progressBar.style.width = `${progressPercentage}%`;
+    progressText.textContent = `${progressPercentage}% Complete`;
+
+
+    // function nextPage() {
+    //   // Handle logic to move to the next page
+    //   // You can either show/hide sections dynamically or redirect to a new URL to load the next assessment
+    //   // You would typically handle this logic on the backend in a real-world scenario
+    //   window.location.href = "2_VPA.html";
+    // }
+
+    function nextPage() {
+    // Retrieve the selected values from the form
+    const form = document.getElementById("testForm");
+    const formData = new FormData(form);
+
+    // Create a URLSearchParams object to store the selected values
+    const urlParams = new URLSearchParams();
+
+    // Iterate over the form data and append the selected values to the URLSearchParams object
+    for (const pair of formData.entries()) {
+      urlParams.append(pair[0], pair[1]);
+    }
+
+    // Redirect to the results page with the selected values as query parameters
+    window.location.href = `2_VPA.html?${urlParams.toString()}`;
+    }
+
+
+
+    // function nextPage() {
+    // // Retrieve the selected values from the form
+    // const form = document.getElementById("testForm");
+    // const formData = new FormData(form);
+
+    // // Create a URLSearchParams object to store the selected values
+    // const urlParams = new URLSearchParams();
+
+    // // Iterate over the form data and append the selected values to the URLSearchParams object
+    // for (const pair of formData.entries()) {
+    //   urlParams.append(pair[0], pair[1]);
+    // }
+
+    // // Redirect to the results page with the selected values as query parameters
+    // window.location.href = `results.html?${urlParaxms.toString()}`;
+    // }
+
+    // 
+    // function handlegetdata(e) {
+    //     e.preventDefault();
+    //     console.log("Hi")
+    //     // window.localStorage.setItem("demo", "value")
+        
+    //     const AVInputs = document.querySelectorAll(".AV");
+    //     console.log(AVInputs);
+    
+    
+    // }
+    
+    document.getElementById("submit-data").addEventListener("click", (e)=>{
+        e.preventDefault();
+        console.log('hii');
+        
+        
+            // const AVDivs = document.querySelectorAll(".AV");
+            // const AVInputs = document.querySelectorAll("input");
+            // let AV_Total = 0;
+            // for(let i=0; i<AVDivs; i++){
+            //     for(let j=0; j<AVInputs.length; j++){
+            //     // AV_Total += AVDivs[i].value
+            //     console.log(AVDivs[i].value);
+            //     }
+            // }
+            // // AV_Total.map(AV => AV_Total+=AV.value);
+            // console.log(AVInputs);
+            // console.log(AV_Total);
+
+            const AV = document.querySelectorAll('input[type="radio"][data-type="AV"]:checked');
+            const SN = document.querySelectorAll('input[type="radio"][data-type="SN"]:checked');
+            const RG = document.querySelectorAll('input[type="radio"][data-type="RG"]:checked');
+            const SK = document.querySelectorAll('input[type="radio"][data-type="SK"]:checked');
+            const NQ = document.querySelectorAll('input[type="radio"][data-type="NQ"]:checked');
+
+
+            console.log(AV);
+            console.log(SN);
+            console.log(RG);
+            console.log(SK);
+            console.log(NQ);
+
+            let AV_Total = 0,
+                SN_Total = 0,
+                RG_Total = 0;
+                SK_Total = 0;
+                NQ_Total = 0;
+
+
+            for(let i=0; i<AV.length; i++){
+                // console.log(typeof AV[i].value);
+                AV_Total += Number(AV[i].value);
+            }
+            for(let i=0; i<SN.length; i++){
+                // console.log(typeof SN[i].value);
+                SN_Total += Number(SN[i].value);
+            }
+            for(let i=0; i<RG.length; i++){
+                // console.log(typeof RG[i].value);
+                RG_Total += Number(RG[i].value);
+            }
+            for(let i = 0; i<SK.length; i++) {
+                //console.log(typeof SK[i].value);
+                SK_Total += Number(SK[i].value);
+            }
+            for(let i = 0; i<NQ.length; i++) {
+                //console.log(typeof NQ[i].value);
+                NQ_Total += Number(NQ[i].value);
+            }
+
+            console.log(AV_Total);
+            console.log(SN_Total);
+            console.log(RG_Total);
+            console.log(SK_Total);
+            console.log(NQ_Total);
+
+            window.localStorage.setItem('med_score', JSON.stringify({
+                AV_score: AV_Total,
+                SN_score: SN_Total,
+                RG_score: RG_Total,
+                SK_score: SK_Total,
+                NQ_score: NQ_Total,
+            }));
+    });
+
+  </script>
+</body>
+</html>

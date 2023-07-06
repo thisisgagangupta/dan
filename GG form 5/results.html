@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="maingr">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+<script>
+VANTA.TRUNK({
+  el: ".maingr",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 600.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x974598,
+  backgroundColor: 0xf2f6f9,
+  spacing: 0.20
+})
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+  <link rel="stylesheet" href="results.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div><img src="perfecto1.png" class="image-style" style="width: 90px; height: 90px;"></div>
+  <div class="container">
+    <div class="result-wrapper">
+      <h1 class="result-title">Results:<br><br></h1>
+      <div class="result-content">
+        <p id="avScore"></p>
+        <p id="snScore"></p>
+        <p id="skScore"></p>
+        <p id="rgScore"></p>
+        <p id="highestScore"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2023 SensorialMente. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+  <script>
+    const score = JSON.parse(window.localStorage.getItem('med_score'));
+    let { AV_score, RG_score, SN_score, SK_score } = score;
+
+    // Calculate the highest score
+    let highestScore = Math.max(AV_score, RG_score, SN_score, SK_score);
+    let highestScoreText = '';
+
+    // Determine which score is the highest and set the corresponding text
+    if (highestScore === AV_score) {
+      highestScoreText = 'You are a Avoider! <br><br> Avoiding/Avoider: The degree to which a child is bothered by sensory input. A child with a Much More Than Others score in this pattern moves away from sensory input at a higher rate than others. ';
+    } else if (highestScore === RG_score) {
+      highestScoreText = 'You are a Bystander! <br><br> Registration/Bystander: The degree to which a child misses sensory input. A child with a Much More Than Others score in this pattern misses sensory input at a higher rate than others. ';
+    } else if (highestScore === SN_score) {
+      highestScoreText = 'You are a Sensor! <br><br> Sensitivity/Sensor: The degree to which a child detects sensory input. A child with a Much More Than Others score in this pattern notices sensory input at a higher rate than others. ';
+    } else if (highestScore === SK_score) {
+      highestScoreText = 'You are a Seeker! <br><br> Seeking/Seeker: The degree to which a child obtains sensory input. A child with a Much More Than Others score in this pattern seeks sensory input at a higher rate than others.';
+    }
+
+    // Display the scores and the highest score
+    const avScore_html = document.querySelector('#avScore');
+    const snScore_html = document.querySelector('#snScore');
+    const skScore_html = document.querySelector('#skScore');
+    const rgScore_html = document.querySelector('#rgScore');
+    const highestScore_html = document.querySelector('#highestScore');
+
+    // avScore_html.innerHTML = `<h5>AV Score: ${AV_score / 100}</h5>`;
+    // snScore_html.innerHTML = `<h5>SN Score: ${SN_score / 95}</h5>`;
+    // skScore_html.innerHTML = `<h5>SK Score: ${SK_score / 95}</h5>`;
+    // rgScore_html.innerHTML = `<h5>RG Score: ${RG_score / 110}</h5>`;
+    highestScore_html.innerHTML = `<h5>${highestScoreText}</h5>`;
+  </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
